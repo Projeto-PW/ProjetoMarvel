@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+:root {
+    --primary: #a00000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+header {
+    background: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+}
+header a img {
+    height: 50px;
+    transition: .3s;
+}
+header a:hover img {
+    transform: scale(105%);
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+nav ul li a {
+    font-size: 1rem;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+#home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 650px;
+    background-size: contain;
+}
+#home button {
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    margin: 0 20px;
+    cursor: pointer;
+}
+#fantasias {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 30px;
+    gap: 3rem;
+    background-color: #ddd;
+    margin: 0 20px;
+    border-radius: 20px;
+}
+.fantasia {
+    background-color: var(--primary);
+    padding: 20px;
+    border-radius: 20px;
+    min-width: 225px;
+}
+.img-fantasia {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+}
+.img-fantasia img {
+    height: 150px;
+}
+.conteudo-fantasia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+    height: 200px;
+}
+.conteudo-fantasia h2 {
+    font-size: 1.2rem;
+}
+.descricao-produto {
+    font-size: 1rem;
+}
+.preco-produto {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+footer{
+    background-image: url(../assets/background.webp);
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer nav ul li a{
+    color: black;
+    font-weight: 600;
+}
+
+footer nav ul li img{
+    height: 30px;
+    width: 30px;
+}
