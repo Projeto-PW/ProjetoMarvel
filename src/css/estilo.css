@@ -20,9 +20,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 15px;
+    height: 64px;
 }
 header a img {
-    height: 50px;
+    height: 40px;
     transition: .3s;
 }
 header a:hover img {
@@ -34,7 +35,7 @@ nav ul {
     list-style: none;
 }
 nav ul li a {
-    font-size: 1rem;
+    font-size: .9rem;
     margin-right: 10px;
     text-decoration: none;
     color: #fff;
@@ -44,10 +45,24 @@ nav ul li a:hover {
 }
 #home {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    width: 100%;
     height: 650px;
     background-size: contain;
+}
+.banner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.conteudo-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 #home button {
     background: none;
@@ -55,6 +70,10 @@ nav ul li a:hover {
     font-size: 2.5rem;
     margin: 0 20px;
     cursor: pointer;
+    transition: .3s;
+}
+#home button:hover {
+    transform: scale(110%);
 }
 #fantasias {
     display: flex;
@@ -119,4 +138,42 @@ footer nav ul li a{
 footer nav ul li img{
     height: 30px;
     width: 30px;
+}
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+    header a img {
+        height: 30px;
+    }
+    header nav ul li a {
+        font-size: .8rem;
+    }
+    #home {
+        height: 450px;
+        margin-bottom: 2rem;
+    }
+    #fantasias {
+        padding: 15px;
+        gap: 1rem;
+    }
+    .fantasia {
+        padding: 10px;
+        min-width: 175px;
+    }
+    .img-fantasia img {
+        height: 100px;
+    }
+    .conteudo-fantasia {
+        height: 150px;
+    }
+    .conteudo-fantasia h2 {
+        font-size: 1rem;
+    }
+    .descricao-produto {
+        font-size: .9rem;
+    }
+    .preco-produto {
+        font-size: 1rem;
+    }
 }
