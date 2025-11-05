@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./src/css/estilo.css">
+        <link rel="icon" type="image/png" href="./src/assets/logo.svg" />
         <title>Loja Marvel</title>
     </head>
     <body>
@@ -22,8 +23,12 @@
         
         <main>
             <section id="home">
-                <button id="btnVoltar">&lt;</button>
-                <button id="btnProximo">&gt;</button>
+                <article class="banner">
+                    <div class="conteudo-banner">
+                        <button id="btnVoltar" onclick="trocarSlide('voltar')">&lt;</button>
+                        <button id="btnProximo" onclick="trocarSlide('avançar')">&gt;</button>
+                    </div>
+                </article>
             </section>
             <section id="fantasias">
                 <article class="fantasia">
@@ -97,5 +102,7 @@
             <h4>&copy;todos os direitos reservados</h4>
             <h5>desenvolvido por Pedro Santaella e Lucas de Comi</h5>
         </footer>
+
+        <script src="./src/js/script.js"></script>
     </body>
 </html>
